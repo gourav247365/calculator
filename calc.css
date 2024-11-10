@@ -1,0 +1,75 @@
+    * {
+        text-align: center;
+    }
+
+    body {
+        background-image: url(i7.jpg);
+        background-size: cover;
+    }
+
+    button{
+        font-size:  large ;
+        border-radius: 10%;
+        background-color: aqua;
+    }
+    
+    button:hover {
+       background-color: rgb(0, 198, 198); 
+    }
+
+    h1{
+        font-size: 50px;
+        font-weight: none;
+        color: blanchedalmond;
+    }
+
+    .t{
+        display: grid;
+        grid-template-columns:  repeat(4, 75px);
+        grid-template-rows:  repeat(5, 75px);
+        gap: 20px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .tt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 20px;
+    }
+
+    input{
+        height: 100px;
+        width: 355px;
+        font-size: x-large;
+        border-radius: 7px;
+        background-color: aqua;   
+        overflow: auto; 
+    }
+
+    @media (max-width: 600px) {
+        button{
+            font-size: medium;
+            border-radius: 10%;
+            background-color: aqua; 
+        } 
+
+        h1{
+            font-size: 40px;
+        }
+
+        input{
+            height: 150px;
+            width: 250px;
+            font-size: medium;
+        }
+        
+        .t{
+            gap: 7px;
+            grid-template-columns:  repeat(4, 60px);
+            grid-template-rows:  repeat(5, 60px);
+        }
+    }

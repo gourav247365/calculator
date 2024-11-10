@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    
+</head>
+
+<body>
+    <div class="tt">
+        <h1>Simple Calculator</h1>
+        <input type="text" id="input-el" placeholder="Enter here" >
+        <br>
+        <div class="t"> 
+            <button onclick="clrall()">AC</button>
+            <button onclick="clr()">C</button>
+            <button onclick="save('%')">%</button>
+            <button onclick="save('*')">*</button>
+            <button onclick="save('1')">1</button>
+            <button onclick="save('2')">2</button>
+            <button onclick="save('3')">3</button>
+            <button onclick="save('/')">/</button>
+            <button onclick="save('4')">4</button>
+            <button onclick="save('5')">5</button>
+            <button onclick="save('6')">6</button>
+            <button onclick="save('+')">+</button>
+            <button onclick="save('7')">7</button>
+            <button onclick="save('8')">8</button>
+            <button onclick="save('9')">9</button>
+            <button onclick="save('-')">-</button>
+            <button onclick="save('.')">.</button>
+            <button onclick="save('0')">0</button>
+            <button>na</button>
+            <button onclick="calculate()">=</button>
+        </div>
+
+        <h1 id="res"> </h1>
+
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
